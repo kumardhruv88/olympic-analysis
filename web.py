@@ -13,7 +13,7 @@ from data_loader import get_athlete_df
 import helper
 import process
 from helper import medal_tally
-df=pd.read_csv('https://drive.google.com/file/d/1K5KawxtSc3XsyCLAGZhRg21EE7BgFQ5h/view?usp=sharing')
+df=pd.read_csv('athlete_events_csv')
 region_df=pd.read_csv('noc_regions.csv')
 
 df=process.preprocess(df,region_df)
